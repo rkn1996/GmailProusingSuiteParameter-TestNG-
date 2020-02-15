@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteWithParameters">
+  <test name="Iteration-1">
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="url" value="https://www.gmail.com"/>
+    <parameter name="userid" value="kumarnayakroshan305"/>
+    <parameter name="uidcriteria" value="valid"/>
+    <parameter name="password" value="rknroshan@123#1996"/>
+    <parameter name="pwdcriteria" value="valid"/>
+    <classes>
+        <class name="tests.LoginTestWithSuiteParameters"/>
+    </classes>
+  </test>
+  <test name="Iteration-2">
+    <parameter name="browsername" value="firefox"/>
+    <parameter name="url" value="https://www.gmail.com"/>
+    <parameter name="userid" value="kumarnayakroshan305"/>
+    <parameter name="uidcriteria" value="valid"/>
+    <parameter name="password" value="rknroshan@12faf"/>
+    <parameter name="pwdcriteria" value="invalid"/>
+    <classes>
+        <class name="tests.LoginTestWithSuiteParameters"/>
+    </classes>
+  </test>
+  <test name="Iteration-3">
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="url" value="https://www.gmail.com"/>
+    <parameter name="userid" value="kumarnayakroshan305"/>
+    <parameter name="uidcriteria" value="valid"/>
+    <parameter name="password" value=""/>
+    <parameter name="pwdcriteria" value="blank"/>
+    <classes>
+        <class name="tests.LoginTestWithSuiteParameters"/>
+    </classes>
+  </test>
+  <test name="Iteration-4">
+    <parameter name="browsername" value="firefox"/>
+    <parameter name="url" value="https://www.gmail.com"/>
+    <parameter name="userid" value="kumarnayakro34fd"/>
+    <parameter name="uidcriteria" value="invalid"/>
+    <parameter name="password" value="N/A"/>
+    <parameter name="pwdcriteria" value="N/A"/>
+    <classes>
+        <class name="tests.LoginTestWithSuiteParameters"/>
+    </classes>
+  </test>
+  <test name="Iteration-5">
+    <parameter name="browsername" value="edge"/>
+    <parameter name="url" value="https://www.gmail.com"/>
+    <parameter name="userid" value=""/>
+    <parameter name="uidcriteria" value="blank"/>
+    <parameter name="password" value="N/A"/>
+    <parameter name="pwdcriteria" value="N/A"/>
+    <classes>
+        <class name="tests.LoginTestWithSuiteParameters"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
